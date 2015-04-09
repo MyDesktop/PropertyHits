@@ -8,13 +8,30 @@ use Data::Dumper;
 
 #---------------------------------------------------------
 
-  my %data = (
-         "Apikey" => "54321abcde",
+  my @properties=();
+
+  my %property = (
          "UniqueID" => "4500199",
          "AgentID" => "12345",
          "Date" => "2014-09-05",
          "Hits" => "114",
+  );
+
+  push(@properties,\%property);
+
+  %property = (
+         "UniqueID" => "4500200",
+         "AgentID" => "12345",
+         "Date" => "2014-09-05",
+         "Hits" => "205",
+  );
+
+  push(@properties,\%property);
+
+  my %data = (
+         "Apikey" => "54321abcde",
          "Test" => "0",
+         "Properties" => \@properties,
   );
 
   my $json = encode_json(\%data);
