@@ -17,7 +17,7 @@ use Data::Dumper;
          "Hits" => "114",
   );
 
-  push(@properties,\%property);
+  push(@properties,{%property});
 
   %property = (
          "UniqueID" => "4500200",
@@ -26,7 +26,7 @@ use Data::Dumper;
          "Hits" => "205",
   );
 
-  push(@properties,\%property);
+  push(@properties,{%property});
 
   my %data = (
          "Apikey" => "54321abcde",
