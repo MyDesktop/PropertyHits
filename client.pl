@@ -38,7 +38,7 @@ use Data::Dumper;
 
   my $ua = LWP::UserAgent->new;
 
-  my $url = "http://api.mydesktop.com.au/cgi-bin/test/propertyhits.cgi";
+  my $url = "https://api.mydesktop.com.au/cgi-bin/test/propertyhits.cgi";
 
   my $headers = HTTP::Headers->new(Content_Type => "application/json");
 
