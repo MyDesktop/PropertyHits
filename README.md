@@ -14,7 +14,7 @@ The purpose of this endpoint is to provide external websites with access to upda
 ## Payload
 
 - `Apikey` - Unique to each developer, MyDesktop will provide this to you on setup
-- `Test` - If set to 0, hits will not be committed to the database
+- `Test` - If set to 1, hits will not be committed to the database
 - `Properties` - An array of property objects
 
 **Property Object**
