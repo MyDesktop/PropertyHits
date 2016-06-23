@@ -10,12 +10,13 @@ The purpose of this endpoint is to provide external websites with access to upda
 - Submit a `POST` request with `JSON` payload as specified below
 - `Hits` submitted are the total number of hits for that day
 - A repeat `Hits` submission for a date will **override** the hits on that date with the new `Hits` figure
+- Your request should be submitted in batches of 500. More than 500 properties in one request will result in an error.
 
 ## Payload
 
 - `Apikey` - Unique to each developer, MyDesktop will provide this to you on setup
 - `Test` - If set to 1, hits will not be committed to the database
-- `Properties` - An array of property objects
+- `Properties` - An array of property objects (in batches of 500 or less)
 
 **Property Object**
 
